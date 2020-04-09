@@ -1,0 +1,27 @@
+.register-page {
+
+    height: 100%;
+    width: 100vw !important;
+    margin: 0;
+    padding: 0;
+    background: rgba(193,96,99, 0.8), url('https://source.unsplash.com/1600x900/?wallpaper') no-repeat;
+    background: linear-gradient(45deg, rgba(193,96,99,0.8) 0%, rgba(235,166,145,0.8) 20%, rgba(164,146,130,0.8) 34%, rgba(58,95,111,0.8) 69%, rgba(45,82,97,0.8) 100%), url('https://source.unsplash.com/1600x900/?wallpaper') no-repeat center center fixed;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.fill-window {
+    height: 100%;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
