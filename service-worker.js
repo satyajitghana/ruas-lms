@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/ruas-lms/precache-manifest.920005ad1dca1c8dbc32acb3b0c47ba9.js"
+  "/ruas-lms/precache-manifest.53d7b19565d9ec873f7e4c872478dc19.js"
 );
 
 self.addEventListener('message', (event) => {

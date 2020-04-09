@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "10c3df1d51ba1eb95d4647d7ef8665d0",
+    "revision": "ba5744eea78074f45bb24a2ee0f9f9ed",
     "url": "/ruas-lms/index.html"
   },
   {
-    "revision": "c97fe779eb478e4741af",
+    "revision": "b0ef582c2fe63b41f49c",
     "url": "/ruas-lms/static/css/main.609b49cd.chunk.css"
   },
   {
-    "revision": "8f0736efcfeb1016cdfd",
-    "url": "/ruas-lms/static/js/2.03a979db.chunk.js"
+    "revision": "3bf0250ac82be38fb19b",
+    "url": "/ruas-lms/static/js/2.32b4e2d4.chunk.js"
   },
   {
     "revision": "cacaf3f01dd3bd8237006f7c58951c1c",
-    "url": "/ruas-lms/static/js/2.03a979db.chunk.js.LICENSE.txt"
+    "url": "/ruas-lms/static/js/2.32b4e2d4.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "c97fe779eb478e4741af",
-    "url": "/ruas-lms/static/js/main.6ca0e80c.chunk.js"
+    "revision": "b0ef582c2fe63b41f49c",
+    "url": "/ruas-lms/static/js/main.c446c4cf.chunk.js"
   },
   {
-    "revision": "47d4cacba27898eafc3f",
-    "url": "/ruas-lms/static/js/runtime-main.acff190e.js"
+    "revision": "147f0a38c9a156a67429",
+    "url": "/ruas-lms/static/js/runtime-main.16f9818e.js"
   },
   {
     "revision": "2881d6da85bf73a1e6197e0db43578e7",
