@@ -26,7 +26,7 @@ function Footer() {
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={process.env.PUBLIC_URL}>
       <Switch>
         <Route path='/login' component={Login} />
         <Route path='/register' component={Register} />
