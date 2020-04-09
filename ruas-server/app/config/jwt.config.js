@@ -1,3 +1,3 @@
 module.exports = {
-    JWT_ACCESS_TOKEN: 'TOKEN'
+    JWT_ACCESS_TOKEN: 'RUASDBaccesstoken'
 }
