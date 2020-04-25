@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Generation Time: Apr 09, 2020 at 12:06 AM
+-- Generation Time: Apr 09, 2020 at 02:16 AM
 -- Server version: 8.0.13-4
 -- PHP Version: 7.2.24-0ubuntu0.18.04.3
 
@@ -34,6 +34,13 @@ CREATE TABLE `EXHIBITION` (
   `capacity` int(5) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
+--
+-- Dumping data for table `EXHIBITION`
+--
+
+INSERT INTO `EXHIBITION` (`room_id`, `room_name`, `capacity`) VALUES
+(1, 'A201', 60);
+
 -- --------------------------------------------------------
 
 --
@@ -46,6 +53,13 @@ CREATE TABLE `PROJECT_EXHIBITION` (
   `table_no` int(5) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
+--
+-- Dumping data for table `PROJECT_EXHIBITION`
+--
+
+INSERT INTO `PROJECT_EXHIBITION` (`room_id`, `project_id`, `table_no`) VALUES
+(1, 2, 1);
+
 -- --------------------------------------------------------
 
 --
@@ -56,6 +70,15 @@ CREATE TABLE `PROJECT_STUDENT_REGISTER` (
   `project_id` int(5) NOT NULL,
   `student_reg_no` char(12) COLLATE utf8_unicode_ci NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+--
+-- Dumping data for table `PROJECT_STUDENT_REGISTER`
+--
+
+INSERT INTO `PROJECT_STUDENT_REGISTER` (`project_id`, `student_reg_no`) VALUES
+(2, '17ETCS002159'),
+(2, '17ETCS002122'),
+(2, '17ETCS002168');
 
 -- --------------------------------------------------------
 
@@ -71,6 +94,13 @@ CREATE TABLE `PROJEKT` (
   `department` enum('CSE','EEE','ECE','CIVIL') COLLATE utf8_unicode_ci NOT NULL,
   `category` varchar(30) COLLATE utf8_unicode_ci NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+--
+-- Dumping data for table `PROJEKT`
+--
+
+INSERT INTO `PROJEKT` (`id`, `project_leader_regno`, `project_name`, `mentor_name`, `department`, `category`) VALUES
+(2, '17ETCS002159', 'KrishiAI', 'Chaitra S', 'CSE', 'DL');
 
 -- --------------------------------------------------------
 
@@ -99,6 +129,15 @@ CREATE TABLE `STUDENT` (
   `contact_no` varchar(10) COLLATE utf8_unicode_ci NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
+--
+-- Dumping data for table `STUDENT`
+--
+
+INSERT INTO `STUDENT` (`id`, `reg_no`, `name`, `department`, `course`, `contact_no`) VALUES
+(2, '17ETCS002122', 'Prachi Poddar', 'CSE', 'B.Tech', '9856523658'),
+(1, '17ETCS002159', 'Satyajit Ghana', 'CSE', 'B.Tech', '7892137665'),
+(3, '17ETCS002168', 'Shikhar Singh', 'CSE', 'B.Tech', '9852145896');
+
 -- --------------------------------------------------------
 
 --
@@ -110,6 +149,15 @@ CREATE TABLE `STUDENT_LOGIN` (
   `user_name` varchar(20) COLLATE utf8_unicode_ci NOT NULL,
   `hashed_password` char(60) COLLATE utf8_unicode_ci NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+--
+-- Dumping data for table `STUDENT_LOGIN`
+--
+
+INSERT INTO `STUDENT_LOGIN` (`id`, `user_name`, `hashed_password`) VALUES
+(1, '17ETCS002159', '$2b$10$uVRx4ogFBi0owMljpvEilONnd9wWOMtrpgVwqw2Mw8.aNmo6yEU1u'),
+(2, '17ETCS002122', '$2b$10$ATp9qxsPWBsOUXDAB1YvK.yTLi4GK1mzpIHBCfSOCQwtxLU/52Pk2'),
+(3, '17ETCS002168', '$2b$10$3cfBMD3yRi3YJk.fFGrNY.Yx1RRonj4z2cqgOe2fgZ78yNaqRxFkC');
 
 --
 -- Indexes for dumped tables
@@ -173,13 +221,13 @@ ALTER TABLE `STUDENT_LOGIN`
 -- AUTO_INCREMENT for table `EXHIBITION`
 --
 ALTER TABLE `EXHIBITION`
-  MODIFY `room_id` int(5) NOT NULL AUTO_INCREMENT;
+  MODIFY `room_id` int(5) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT for table `PROJEKT`
 --
 ALTER TABLE `PROJEKT`
-  MODIFY `id` int(5) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(5) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT for table `STAFF_LOGIN`
@@ -191,7 +239,7 @@ ALTER TABLE `STAFF_LOGIN`
 -- AUTO_INCREMENT for table `STUDENT_LOGIN`
 --
 ALTER TABLE `STUDENT_LOGIN`
-  MODIFY `id` int(5) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(5) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- Constraints for dumped tables
